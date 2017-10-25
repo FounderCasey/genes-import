@@ -75,6 +75,22 @@
 					<h3>- Jane Doe</h3>
 				</div>
 			</div>
+			<div id="map">
+			</div>
+			<script>
+				function initMap() {
+					var location = {lat: 36.611337, lng: -121.851578};
+        	var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: location
+        });
+					var marker = new google.maps.Marker({
+						position: location,
+						map: map
+					});
+				}
+			</script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaeCaY_B3VuHllL5QYc-6_wqQllMP-Sbw&callback=initMap"></script>
     </div>
   </body>
 </html>
