@@ -63,34 +63,53 @@
           <p class="sectionp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non finibus lorem. Quisque sagittis tempus aliquam.</p>
         </div>
       </div>
-			<div class="wrapper" id="twrapper"> <!-- Testimonials Wrapper -->
-				<div class="testimonial">
-					<img src="css/images/man.png">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non finibus lorem. Quisque sagittis tempus aliquam.</h2>
-					<h3>- John Deer</h3>
-				</div>
-				<div class="testimonial">
-					<img src="css/images/woman.png">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non finibus lorem. Quisque sagittis tempus aliquam.</h2>
-					<h3>- Jane Doe</h3>
-				</div>
-			</div>
-			<div id="map">
-			</div>
-			<script>
-				function initMap() {
-					var location = {lat: 36.611337, lng: -121.851578};
-        	var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: location
-        });
-					var marker = new google.maps.Marker({
-						position: location,
-						map: map
-					});
-				}
-			</script>
-			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaeCaY_B3VuHllL5QYc-6_wqQllMP-Sbw&callback=initMap"></script>
+      <div class="wrapper" id="twrapper"> <!-- Testimonials Wrapper -->
+        <div class="testimonial">
+          <img src="css/images/man.png">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non finibus lorem. Quisque sagittis tempus aliquam.</h2>
+          <h3>- John Deer</h3>
+        </div>
+        <div class="testimonial">
+          <img src="css/images/woman.png">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non finibus lorem. Quisque sagittis tempus aliquam.</h2>
+          <h3>- Jane Doe</h3>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="footer">
+          <div class="info">
+            <h2>Some other basic information</h2>
+            <h3>Our hours:</h3>
+            <ul>
+              <li>Monday: 9AM-5PM</li>
+              <li>Tuesday: 9AM-5PM</li>
+              <li>Wednesday: 9AM-5PM</li>
+              <li>Thursday: 9AM-5PM</li>
+              <li>Friday: 9AM-5PM</li>
+              <li>Saturday & Sunday: Closed</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <div id="map">
+          </div>
+        </div>
+      </div>
+      <script>
+        function initMap() {
+         var location = {lat: 36.611337, lng: -121.851578};
+             var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 17,
+              center: location
+            });
+         var marker = new google.maps.Marker({
+          position: location,
+          map: map
+         });
+        }
+      </script>
+			   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaeCaY_B3VuHllL5QYc-6_wqQllMP-Sbw&callback=initMap"></script>
+      
     </div>
   </body>
 </html>
